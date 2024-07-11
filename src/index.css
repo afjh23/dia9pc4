@@ -5,18 +5,21 @@
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background: whitesmoke;
 }
 
 body{
   list-style: none;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .user-list {
-  margin: 2rem 1rem;
+  margin: 3rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
   place-content: center;
-  background: whitesmoke;
+
   grid-gap: 20px;
 
 }
@@ -29,6 +32,7 @@ body{
   flex-direction: column;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .user-item > figure {
