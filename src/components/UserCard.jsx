@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const UserCard = ({ user: { id, name, username, email } }) => {
+export const UserCard = ({ user: { id, name, username, email, address: { street, city }, phone, website } }) => {
     return (
         <li className='user-item'>
             <figure className='item-img-container'>
@@ -10,9 +10,15 @@ export const UserCard = ({ user: { id, name, username, email } }) => {
                 <h2>{name}</h2>
                 <span>@{username}</span>
                 <span>{email}</span>
-
             </div>
-
+            <div className='user-info info-completed'>
+                <h2>{name}</h2>
+                <span>@{username}</span>
+                <span>{email}</span>
+                <span>City: {city}</span>
+                <span>Phone: {phone}</span>
+                <span>Web: {website}</span>
+            </div>
         </li>
     )
 }
